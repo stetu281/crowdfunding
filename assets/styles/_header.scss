@@ -20,4 +20,12 @@
         }
 
     }
+
+    @include tablet {
+        padding-top: 50px;
+        
+        &__hamburger {
+            display: none;
+        }
+    }
 }

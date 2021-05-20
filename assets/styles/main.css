@@ -23,7 +23,7 @@ body {
 
 .header {
   width: 85%;
-  max-width: 1200px;
+  max-width: 1300px;
   margin: 0 auto;
   padding-top: 30px;
   display: flex;
@@ -41,6 +41,14 @@ body {
 }
 .header__hamburger:hover {
   cursor: pointer;
+}
+@media screen and (min-width: 768px) {
+  .header {
+    padding-top: 50px;
+  }
+  .header__hamburger {
+    display: none;
+  }
 }
 
 .nav {
@@ -78,6 +86,37 @@ body {
   font-size: 1.25rem;
   font-weight: 500;
   color: #000000;
+}
+.nav__link:hover {
+  cursor: pointer;
+}
+@media screen and (min-width: 768px) {
+  .nav {
+    width: auto;
+    position: unset;
+    border-radius: unset;
+    background-color: transparent;
+  }
+  .nav__overlay {
+    display: none;
+  }
+  .nav__list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .nav__list-item {
+    padding: unset;
+  }
+  .nav__list-item:not(.nav__list-item:last-child) {
+    border-bottom: none;
+    margin-right: 30px;
+  }
+  .nav__link {
+    padding: 0;
+    color: #ffffff;
+    font-size: 1rem;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
