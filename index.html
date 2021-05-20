@@ -7,11 +7,29 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;700&display=swap" rel="stylesheet"> 
-  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="assets/styles/main.css">
   <title>Frontend Mentor | Crowdfunding product page</title>
 
 </head>
 <body>
-  <script src="js/scripts.js"></script>
+  <header class="header">
+    <img src="assets/images/logo.svg" class="header__logo" alt="">
+    <button class="header__hamburger">
+      <img src="assets/images/icon-hamburger.svg" alt=""> 
+    </button>
+    <div class="nav__overlay"></div>
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__list-item"><a href="#" class="nav__link">About</a></li>
+        <li class="nav__list-item"><Discover href="#" class="nav__link">Discover</a></li>
+        <li class="nav__list-item"><Get href="#" class="nav__link">Get Started</a></li>
+      </ul>
+    </nav>
+  </header>
+  <picture>
+    <source media="(min-width:768px" srcset="assets/images/image-hero-desktop.jpg">
+    <img src="assets/images/image-hero-mobile.jpg" class="background-img" alt="">
+  </picture>
+  <script src="assets/js/scripts.js"></script>
 </body>
 </html>

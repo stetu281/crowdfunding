@@ -1,0 +1,41 @@
+.nav {
+    width: 85%;
+    position: absolute;
+    top: 100vh;
+    border-radius: 10px;
+    background-color: $white;
+    transition: top .5s;
+
+    &--open {
+        top: 90px;
+    }
+
+    &__overlay {
+        height: 100vh;
+        position: fixed;
+        top: -100vh;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-image: linear-gradient(rgba($black, 0.5), transparent);
+        transition: top .4s;
+
+        &--open {
+            top: 0;
+        }
+    }
+
+    &__list-item {
+        padding: 1.4rem 0;
+        &:not(&:last-child) {
+            border-bottom: 1px solid rgba($gray, 0.2);    
+        } 
+    }
+
+    &__link {
+        padding: 1.25rem;
+        font-size: 1.25rem;
+        font-weight: $semi-bold;
+        color: $black;
+    }
+}

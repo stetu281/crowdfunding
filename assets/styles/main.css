@@ -1,0 +1,83 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+body {
+  font-family: "Commissioner", sans-serif;
+  color: #7a7a7a;
+  position: relative;
+}
+
+.background-img {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: -5;
+}
+
+.header {
+  width: 85%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__logo {
+  transform: scale(1.05);
+  z-index: 10;
+}
+.header__hamburger {
+  border: none;
+  background: transparent;
+  z-index: 10;
+}
+.header__hamburger:hover {
+  cursor: pointer;
+}
+
+.nav {
+  width: 85%;
+  position: absolute;
+  top: 100vh;
+  border-radius: 10px;
+  background-color: #ffffff;
+  transition: top 0.5s;
+}
+.nav--open {
+  top: 90px;
+}
+.nav__overlay {
+  height: 100vh;
+  position: fixed;
+  top: -100vh;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), transparent);
+  transition: top 0.4s;
+}
+.nav__overlay--open {
+  top: 0;
+}
+.nav__list-item {
+  padding: 1.4rem 0;
+}
+.nav__list-item:not(.nav__list-item:last-child) {
+  border-bottom: 1px solid rgba(122, 122, 122, 0.2);
+}
+.nav__link {
+  padding: 1.25rem;
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #000000;
+}
+
+/*# sourceMappingURL=main.css.map */
