@@ -11,14 +11,20 @@
 body {
   font-family: "Commissioner", sans-serif;
   color: #7a7a7a;
-  position: relative;
 }
 
 .background-img {
+  margin-top: -50px;
   width: 100%;
-  position: absolute;
-  top: 0;
+  display: block;
   z-index: -5;
+}
+
+main {
+  height: 100%;
+  min-height: 100vh;
+  background-color: rgba(122, 122, 122, 0.1);
+  position: relative;
 }
 
 .header {
@@ -43,9 +49,6 @@ body {
   cursor: pointer;
 }
 @media screen and (min-width: 768px) {
-  .header {
-    padding-top: 50px;
-  }
   .header__hamburger {
     display: none;
   }
@@ -58,6 +61,7 @@ body {
   border-radius: 10px;
   background-color: #ffffff;
   transition: top 0.5s;
+  z-index: 10;
 }
 .nav--open {
   top: 90px;
@@ -117,6 +121,59 @@ body {
     color: #ffffff;
     font-size: 1rem;
   }
+}
+
+.riser {
+  width: 85%;
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: -60px;
+  padding: 0 1.5rem 2.5rem 1.5rem;
+  background-color: #ffffff;
+  border: 1px solid rgba(122, 122, 122, 0.15);
+  border-radius: 10px;
+  text-align: center;
+}
+.riser__logo {
+  margin-top: -28px;
+}
+.riser__title {
+  margin-top: 30px;
+  font-size: 1.5rem;
+  color: #000000;
+}
+.riser__text {
+  margin-top: 20px;
+  font-size: 0.85rem;
+  line-height: 1.5rem;
+}
+.riser__buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+  width: 100%;
+}
+.riser__button {
+  padding: 1rem 2.5rem;
+  border: none;
+  border-radius: 50px;
+  background-color: #3cb4ac;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 700;
+}
+.riser__button:hover {
+  background-color: #147b74;
+}
+.riser__bookmark {
+  border: none;
+  border-radius: 100px;
 }
 
 /*# sourceMappingURL=main.css.map */
