@@ -21,3 +21,32 @@
     justify-content: center;
     align-items: center;
 }
+
+@mixin card {
+    @include content;
+    @include flex;
+    flex-direction: column;
+    padding: 2.5rem 1.5rem;
+    max-width: 800px;
+    background-color: $white;
+    border: 1px solid rgba($gray, 0.15);
+    border-radius: 10px;
+
+    @include tablet {
+        padding: 2.5rem 3rem;
+    }
+}
+
+@mixin button {
+    padding: 1rem 2.5rem;
+    border: none;
+    border-radius: 50px;
+    background-color: $primary;
+    color: $white;
+    font-size: $m-text;
+    font-weight: $bold;
+
+    &:hover {
+        background-color: $hover;
+    }
+}
