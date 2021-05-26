@@ -133,6 +133,7 @@ main {
   flex-direction: column;
   margin-top: -60px;
   padding: 0 1.5rem 2.5rem 1.5rem;
+  max-width: 800px;
   background-color: #ffffff;
   border: 1px solid rgba(122, 122, 122, 0.15);
   border-radius: 10px;
@@ -174,6 +175,34 @@ main {
 .riser__bookmark {
   border: none;
   border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(122, 122, 122, 0.15);
+}
+.riser__bookmark-text {
+  padding: 0 2rem;
+  font-weight: 700;
+  color: #7a7a7a;
+  font-size: 1rem;
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .riser {
+    padding: 0 3rem 2.5rem 3rem;
+  }
+  .riser__title {
+    font-size: 2rem;
+  }
+  .riser__text {
+    font-size: 1rem;
+  }
+  .riser__buttons {
+    margin-top: 40px;
+  }
+  .riser__bookmark-text {
+    display: unset;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

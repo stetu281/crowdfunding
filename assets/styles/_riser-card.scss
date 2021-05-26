@@ -4,6 +4,7 @@
     flex-direction: column;
     margin-top: -60px;
     padding: 0 1.5rem 2.5rem 1.5rem;
+    max-width: 800px;
     background-color: $white;
     border: 1px solid rgba($gray, 0.15);
     border-radius: 10px;
@@ -49,5 +50,35 @@
     &__bookmark {
         border: none;
         border-radius: 100px;
+        @include flex;
+        background-color: rgba($gray, 0.15);
+    }
+
+    &__bookmark-text {
+        padding: 0 2rem;
+        font-weight: $bold;
+        color: $gray;
+        font-size: 1rem;
+        display: none;
+    }
+
+    @include tablet {
+        padding: 0 3rem 2.5rem 3rem;
+
+        &__title {
+            font-size: 2rem;
+        }
+
+        &__text {
+            font-size: $m-text;
+        }
+
+        &__buttons {
+            margin-top: 40px;
+        }
+
+        &__bookmark-text {
+            display: unset;
+        }
     }
 }
